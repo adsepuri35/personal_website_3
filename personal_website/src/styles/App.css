@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif; /* Set the font style to Poppins */
@@ -8,7 +9,49 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    background: #333;
+    background: #000d17;
     color: white;
 }
 
+.home {
+    width: 40%;
+    max-width: 1000px; /* Set a maximum width */
+    margin: 0 auto; /* Center the block */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add some border */
+
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        width: 1000px; /* Maintain the initial width */
+    }
+}
+
+.name {
+    font-family: 'Gugi', 'Poppins', sans-serif;
+    font-size: 1.7em;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.title-container h2 {
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.intro {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
