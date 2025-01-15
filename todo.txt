@@ -11,3 +11,5 @@ Notes:
  - Blocks are glossy transparent with white borders (maybe implement push-rotate functionality)
  - When the width of screen is reduced, the main block shouldnt stay at 60% of the screen, it should stay at the initial 60%
 
+
+Fix double borders in experience section

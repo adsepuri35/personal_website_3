@@ -7,8 +7,12 @@ const Title = () => {
         <div className="title-container">
             <div className='name'>Advait Sepuri</div>
             <div className="icons">
-                <FaLinkedin />
-                <FaGithub />
+                <a href="https://www.linkedin.com/in/advait-sepuri/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com/adsepuri35" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
             </div>
         </div>
     );
