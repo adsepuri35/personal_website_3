@@ -4,6 +4,7 @@ import '../styles/App.css';
 import Title from '../components/title.jsx';
 import Intro from '../components/intro.jsx';
 import Experience from '../components/experience.jsx';
+import Projects from '../components/projects.jsx';
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
             <Title />
             <Intro />
             <Experience />
+            <Projects />
         </div>
     );
 }

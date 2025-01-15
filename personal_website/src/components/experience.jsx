@@ -123,7 +123,7 @@ const Experience = () => {
                             <div className="organization">iCIMS</div>
                             <div className="position">Software Engineering Intern</div>
                         </div>
-                        <div className="date">2022-23</div>
+                        <div className="date">2022</div>
                     </div>
                 </div>
                 <div className="experience-block">
