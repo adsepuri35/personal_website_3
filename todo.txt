@@ -1,0 +1,15 @@
+Super Simple
+Dark grey/black background + semi-white text
+Sections:
+ - Name (left-justified). Icons: Linkedin, Github, Email (right, justified)
+ - Intro: just text. Include email, interests, hobbies stuff like that.
+ - Experience: Contains blocks with icon left justified, Company/Org + Position, Years active
+ - Projects: Larger blocks w/ link to Github. 2 blocks on each row. Short description included.
+
+Notes:
+ - Center everything but blocks only take up ~60% of screen
+ - Blocks are glossy transparent with white borders (maybe implement push-rotate functionality)
+ - When the width of screen is reduced, the main block shouldnt stay at 60% of the screen, it should stay at the initial 60%
+
+
+Fix double borders in experience section

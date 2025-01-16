@@ -1,363 +1,258 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif; /* Set the font style to Poppins */
+    font-family: 'Nunito Sans', sans-serif; /* Set the font style to Poppins */
 }
 
-body, html {
+html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-.home-bg {
-    background-image: url('../assets/website_bg.jpg');
-    height: 100vh; /* Set the height to 100% of the viewport height */
     width: 100%;
-    position: relative; /* Fix the position of the div */
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove padding */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-}
-
-.pfp {
-    width: 21vw; /* Set the width to 10% of the viewport width */
-    height: auto; /* Keep the aspect ratio of the image */
-    position: absolute; /* Position the image absolutely within the parent div */
-    top: 55%; /* Position at the middle of the parent div */
-    left: 50%; /* Position at the middle of the parent div */
-    transform: translate(-50%, -50%); /* Offset the image by half its width and height to center it */
-    border-radius: 50%;
-}
-
-.intro {
-    font-size: 4em;
     color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 4%;
-    left: 40%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url('http://unsplash.it/1200x800') center center no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background fixed */
+    background-size: cover;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000000, #1d1e1f);
+    opacity: 0.95;
+    z-index: -1;
+}
+
+.home {
+    width: 535px;
+    max-width: 1000px; /* Set a maximum width */
+    margin: 0 auto; /* Center the block */
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .home {
+        width: 1000px; /* Maintain the initial width */
+    }
 }
 
 .name {
-    color: #edb211;
-}
-
-.desc {
-    color: white;
-    font-size: 1.5em;
-    width: 43vw;
-    position: absolute;
-    top: 17%;
-    left: 45%;
-}
-
-.links {
-    font-size: 2.5em;
-    font-weight: 600;
-    position: absolute;
-    color: white;
-    top: 75%;
-    left: 10%;
-}
-
-.icon {
-    font-size: 5.5em;
-    color: #edb211;
-}
-
-.icon-container {
-    width: 22vw;
-    display: flex; /* Make the container a flex container */
-    justify-content: space-around; /* Space the icons evenly with equal space around them */
-    position: absolute;
-    top: 83%;
-    left: 6.7%; 
-}
-
-/*Bobbing arrow animation */
-.arrow{
-    position: absolute;
-    top: 93%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.arrow span{
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 4s infinite;
-}
-.arrow span:nth-child(2){
-    animation-delay: -0.4s;
-}
-.arrow span:nth-child(3){
-    animation-delay: -0.8s;
-}
-/*key frames for arrow animation */
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-}
-
-
-.exp-bg {
-    background-color: #141414;
-    background-size: cover;
-    height: 205vh; /* Set the height to 100% of the viewport height */
-    width: 100%; /* Set the width to 100% of the viewport width */
-    position: relative; /* Fix the position of the div */
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove padding */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-}
-
-.sect-title {
-    color: #edb211;
-    font-size: 2.5em;
-    font-weight: 600;
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#proj-title {
-    color: #edb211;
-    font-size: 2.5em;
-    font-weight: 600;
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.left-container {
-    height: 200vh;
-    width: 40vw;
-    position: absolute;
-    top: 7%;
-    left: 4.3%;
-}
-
-.vertical-line {
-    position: absolute;
-    width: 0.3vw;
-    height: 190vh;
-    background-color: #edb211;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.right-container {
-    height: 200vh;
-    width: 40vw;
-    position: absolute;
-    top: 7%;
-    right: 4.3%;
-
-}
-
-.company {
-    width: 100%;
-}
-
-#SiriusXM {
-    width: 17vw;
-    position: absolute;
-}
-
-#sxm-date {
-    color: white;
-    position: absolute;
-    top: 3.7vh;
-    right: 0%;
+    font-family: 'Gugi', 'Poppins', sans-serif;
     font-size: 1.7em;
 }
 
-.xp-item {
-    width: 100%;
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
-.position {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 600;
+.title-container h2 {
+    margin: 0;
 }
 
-
-.xp-item  ul {
-    list-style: none; /* Remove default bullets */
-}
-
-.xp-item ul li::before {
-    content: "•"; /* Add custom bullet */
-    color: #edb211; /* Change bullet color */
-    display: inline-block; /* Make the pseudo-element inline */
-    width: 1em; /* Add space after the bullet */
-    margin-left: -1em; /* Move the bullet to the left */
-}
-
-li {
-    color: white;
-    padding-top: 1vh;
+.icons {
+    display: flex;
+    gap: 10px;
     font-size: 1.2em;
 }
 
-#sxm-company {
-    height: 16%;
-}
-#sxm-item {
-    height: 16%;
-}
-#sxm-pos {
-    padding-top: 0vh;
+.icons a {
+    color: white; /* Set the icon color to white */
+    text-decoration: none; /* Remove underline */
 }
 
-#vip-company {
-    height: 18%;
+.icons a:hover {
+    color: #ddd; /* Optional: Change color on hover */
 }
-#vip {
-    width: 19vh;
+
+.intro {
+    /* border: 1px solid white; */
+    margin-bottom: 7%;
 }
-#fung-group {
-    color: white;
-    font-size: 1.5em;
-    width: 15vw;
+
+p {
+    font-size: 0.8em;
 }
-#vip-date {
-    color: white;
-    top: 0vh;
-    font-size: 1.7em;
+
+.gt-highlight {
+    color: #B3A369;
+    text-decoration: none;
+}
+
+.gt-highlight:hover {
+    text-decoration: underline;
+}
+
+.experience {
+    /* border: 1px solid white; */
+    margin-bottom: 5%;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#exp-title {
+    margin-bottom: 7px;
+}
+
+.projects {
+    margin-bottom: 5%;
+}
+
+projects-title {
+    margin-bottom: 10px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Stack blocks vertically */
+    margin-top: 0;
+}
+
+.experience-block {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.experience-block:last-child {
+    border-bottom: none; /* Remove bottom border for the last block */
+}
+
+.left-content {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+}
+
+.company-link {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.company {
+    max-height: 80%;
+    width: auto;
+    border-radius: 9px;
+}
+
+.right-content {
+    width: 92%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.organization-position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+}
+
+.organization {
+    text-align: left;
+    font-size: 0.8em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.position {
+    text-align: left;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 1px;
+}
+
+.date {
     text-align: right;
-    position: relative; /* Add this line */
-    top: -19vh; 
-}
-#vip-item {
-    height: 18%;
+    font-size: 0.7em;
+    align-self: center;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-
-#trad-company {
-    height: 19%;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-auto-rows: minmax(80px, auto);   /* Auto height for rows */
+    gap: 1rem; /* Spacing between grid items */
 }
-#trading-date {
+
+.project-item {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
     color: white;
-    top: 0vh;
-    font-size: 1.7em;
-    text-align: right;
-    position: relative; /* Add this line */
-    top: -10vh; 
-}
-#trad {
-    width: 18vw;
-}
-#trad-item {
-    height: 19%;
-}
-#trad-pos {
-    font-size: 1.3em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
 }
 
-#icims-company {
-    height: 21%;
-}
-#icims {
-    width: 15vw;
-}
-#icims-date {
-    color: white;
-    top: 0vh;
-    font-size: 1.7em;
-    text-align: right;
-    position: relative; /* Add this line */
-    top: -7vh; 
-}
-#icims-item {
-    height: 21%;
+.project-item:hover {
+    transform: translateY(-5px); /* Move the item up slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 }
 
-#easy-company {
-    height: 20%;
-}
-#easy {
-    width: 13vw;
-}
-#easy-date {
-    color: white;
-    top: 0vh;
-    font-size: 1.7em;
-    text-align: right;
-    position: relative; /* Add this line */
-    top: -15vh; 
-}
-#easy-item {
-    height: 20%;
+.project-link {
+    color: inherit; /* Ensure links inherit the color */
+    text-decoration: none; /* Remove underline from links */
 }
 
-.project-bg {
-    background-color: #141414;
-    background-size: cover;
-    height: 120vh; /* Set the height to 100% of the viewport height */
-    width: 100%; /* Set the width to 100% of the viewport width */
-    position: relative; /* Fix the position of the div */
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove padding */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-    overflow: hidden;
+.left-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 0.5rem; /* Optional margin between sections */
 }
 
-#block-logo {
-    width: 22vw;
-    position: absolute;
-}
-#emulator {
-    width: 12vw;
-    position: absolute;
-    left: 60%;
-}
-#block-link {
-  color: white;
-  font-weight: bold;
+.project-name {
+    padding-left: 2%;
+    height: 25%;
 }
 
-#block-item {
-    height: 60vh;
-}
-#block-pos {
-    padding-top: 0vh;
-}
-#block {
-    height: 60vh;
+.project-desc {
+    padding-left: 2%;
+    height: 75%;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.9em;
 }
 
-#sensor {
-    height: 45vh;
+.right-section {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 0.6rem; /* Optional margin between sections */
 }
-#sensor-pic {
-    width: 25vw;
-    position: absolute;
-    left: 25%;
-}
-#sensor-item {
-    height: 45vh;
-}
-#sensor-pos {
-    padding-top: 0vh;
+
+.externalIcon {
+    color: rgba(255, 255, 255, 0.3);
 }
