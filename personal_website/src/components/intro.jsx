@@ -14,7 +14,7 @@ const Intro = () => {
                 For fun, I enjoy bouldering, rolling on jiujitsu mats, everything baseball, and spending time with my family and friends!
                 <br />
                 <br />
-                Feel free to reach me at <a href="mailto:asepuri3@gatech.edu" className="gt-highlight">asepuri3@gatech.edu</a>
+                Feel free to reach me at <a href="mailto:asepuri3@gatech.edu" className="gt-highlight">asepuri3@gatech.edu</a>.
             </p>
         </div>
     );

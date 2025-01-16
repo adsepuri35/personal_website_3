@@ -23,7 +23,7 @@ const Projects = () => {
                     <div className="project-item">
                         <div className="left-section">
                             <div className="project-name">ScopeZMQ</div>
-                            <div className="project-desc">C++ Prometheus exporter for ZeroMQ </div>
+                            <div className="project-desc">C++ Prometheus exporter for ZeroMQ applications</div>
                         </div>
                         <div className="right-section">
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="externalIcon"/>

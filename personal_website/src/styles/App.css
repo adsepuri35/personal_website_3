@@ -35,7 +35,7 @@ body:before {
 }
 
 .home {
-    width: 535px; /* fixed at 535 px */
+    width: 700px; /* fixed at 535 px */
     max-width: 1000px; /* Set a maximum width */
     margin: 0 auto; /* Center the block */
     padding: 20px;
@@ -49,7 +49,7 @@ body:before {
 
 .name {
     font-family: 'Gugi', 'Poppins', sans-serif;
-    font-size: 1.7em;
+    font-size: 2.4em;
 }
 
 .title-container {
@@ -67,7 +67,7 @@ body:before {
 .icons {
     display: flex;
     gap: 10px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .icons a {
@@ -85,7 +85,7 @@ body:before {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 1.0em;
 }
 
 .gt-highlight {
@@ -104,7 +104,7 @@ p {
 
 .section-title {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #exp-title {
@@ -129,7 +129,7 @@ projects-title {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    height: 40px;
+    height: 45px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
@@ -138,7 +138,7 @@ projects-title {
 }
 
 .left-content {
-    width: 8%;
+    width: 7%;
     height: 100%;
     display: flex;
     align-items: center; 
@@ -177,7 +177,7 @@ projects-title {
 
 .organization {
     text-align: left;
-    font-size: 0.8em;
+    font-size: 1em;
     height: 100%;
     display: flex;
     align-items: center;
@@ -185,7 +185,7 @@ projects-title {
 
 .position {
     text-align: left;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: rgba(255, 255, 255, 0.3);
     height: 100%;
     display: flex;
@@ -195,7 +195,7 @@ projects-title {
 
 .date {
     text-align: right;
-    font-size: 0.7em;
+    font-size: 0.9em;
     align-self: center;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -213,6 +213,7 @@ projects-title {
     display: flex;
     flex-direction: row;
     color: white;
+    min-height: 100px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
 }
 
@@ -230,29 +231,31 @@ projects-title {
     width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
     margin: 0.5rem; /* Optional margin between sections */
 }
 
 .project-name {
     padding-left: 2%;
     height: 25%;
+    font-size: 1.3em 
 }
 
 .project-desc {
     padding-left: 2%;
     height: 75%;
     color: rgba(255, 255, 255, 0.3);
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 .right-section {
     width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin: 0.6rem; /* Optional margin between sections */
 }
 
 .externalIcon {
     color: rgba(255, 255, 255, 0.3);
+    height: 22%;
 }
