@@ -12,6 +12,7 @@ html, body {
     padding: 0;
     width: 100%;
     color: white;
+    overflow-x: hidden;
 }
 
 body {
@@ -34,13 +35,13 @@ body:before {
 }
 
 .home {
-    width: 35%;
+    width: 535px;
     max-width: 1000px; /* Set a maximum width */
     margin: 0 auto; /* Center the block */
     padding: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .home {
         width: 1000px; /* Maintain the initial width */
     }
@@ -80,7 +81,7 @@ body:before {
 
 .intro {
     /* border: 1px solid white; */
-    margin-bottom: 8%;
+    margin-bottom: 7%;
 }
 
 p {
@@ -104,7 +105,18 @@ p {
 .section-title {
     font-weight: bold;
     font-size: 1em;
+}
+
+#exp-title {
     margin-bottom: 7px;
+}
+
+.projects {
+    margin-bottom: 5%;
+}
+
+projects-title {
+    margin-bottom: 10px;
 }
 
 .experience-container {
@@ -190,8 +202,8 @@ p {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns */
-    grid-auto-rows: minmax(100px, auto);   /* Auto height for rows */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-auto-rows: minmax(80px, auto);   /* Auto height for rows */
     gap: 1rem; /* Spacing between grid items */
 }
 
@@ -200,19 +212,47 @@ p {
     border-radius: 8px;
     display: flex;
     flex-direction: row;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
 }
 
+.project-item:hover {
+    transform: translateY(-5px); /* Move the item up slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.project-link {
+    color: inherit; /* Ensure links inherit the color */
+    text-decoration: none; /* Remove underline from links */
+}
 
 .left-section {
     width: 90%;
     display: flex;
-    border: 1px solid #ccc;
+    flex-direction: column;
+    gap: 7px;
     margin: 0.5rem; /* Optional margin between sections */
 }
 
+.project-name {
+    padding-left: 2%;
+    height: 25%;
+}
+
+.project-desc {
+    padding-left: 2%;
+    height: 75%;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.9em;
+}
+
 .right-section {
-    wdith: 10%;
+    width: 10%;
     display: flex;
     justify-content: center;
-    margin: 0.5rem; /* Optional margin between sections */
+    margin: 0.6rem; /* Optional margin between sections */
+}
+
+.externalIcon {
+    color: rgba(255, 255, 255, 0.3);
 }

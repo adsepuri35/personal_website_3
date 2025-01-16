@@ -12,7 +12,7 @@ const Experience = () => {
 
     return (
         <div className="experience">
-            <p className="section-title">Experience</p>
+            <p className="section-title" id="exp-title">Experience</p>
             <div className="experience-container">
                 <div className="experience-block">
                     <div className="left-content">
