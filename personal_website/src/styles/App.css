@@ -35,7 +35,7 @@ body:before {
 }
 
 .home {
-    width: 535px;
+    width: 35%;
     max-width: 1000px; /* Set a maximum width */
     margin: 0 auto; /* Center the block */
     padding: 20px;
