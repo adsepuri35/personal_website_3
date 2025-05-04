@@ -93,7 +93,7 @@ const Experience = () => {
                     <div className="right-content">
                         <div className="organization-position">
                             <div className="organization">Trading @ GT</div>
-                            <div className="position">Executive</div>
+                            <div className="position">Vice President</div>
                         </div>
                         <div className="date">2023-25</div>
                     </div>
