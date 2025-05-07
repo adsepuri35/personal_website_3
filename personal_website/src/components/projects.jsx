@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="projects">
             <p className="section-title" id="projects-title">Projects</p>
             <div className="projects-grid">
-                <a href="https://github.com/adsepuri35/ShakeSense" target="_blank" rel="noopener noreferrer" className="project-link">
+                <a href="https://github.com/adsepuri35/gRPC_client_side_load_balancer" target="_blank" rel="noopener noreferrer" className="project-link">
                     <div className="project-item">
                         <div className="left-section">
                             <div className="project-name">gRPC Load Balancer</div>
