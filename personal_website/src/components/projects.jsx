@@ -8,6 +8,17 @@ const Projects = () => {
         <div className="projects">
             <p className="section-title" id="projects-title">Projects</p>
             <div className="projects-grid">
+                <a href="https://github.com/adsepuri35/ShakeSense" target="_blank" rel="noopener noreferrer" className="project-link">
+                    <div className="project-item">
+                        <div className="left-section">
+                            <div className="project-name">gRPC Load Balancer</div>
+                            <div className="project-desc">Route market orders to backend gateways in real-time</div>
+                        </div>
+                        <div className="right-section">
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="externalIcon"/>
+                        </div>
+                    </div>
+                </a>
                 <a href="https://github.com/adsepuri35/bLOCK" target="_blank" rel="noopener noreferrer" className="project-link">
                     <div className="project-item">
                         <div className="left-section">
@@ -52,17 +63,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </a>
-                <a href="https://github.com/adsepuri35/ShakeSense" target="_blank" rel="noopener noreferrer" className="project-link">
-                    <div className="project-item">
-                        <div className="left-section">
-                            <div className="project-name">ShakeSense</div>
-                            <div className="project-desc">Wearable sensor to diagnose Parkinsonian tremors</div>
-                        </div>
-                        <div className="right-section">
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="externalIcon"/>
-                        </div>
-                    </div>
-                </a>
+                
                 <a href="https://github.com/adsepuri35/personal_website_3" target="_blank" rel="noopener noreferrer" className="project-link">
                     <div className="project-item">
                         <div className="left-section">
